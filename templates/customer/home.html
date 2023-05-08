@@ -1,0 +1,17 @@
+{% extends 'customer/base.html' %}
+{% load static %}
+{% block title %}
+Home
+{% endblock title %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/style.html' %}">
+
+{% endblock stylesheet %}  
+
+
+{% block content %}
+       
+<p> {% lorem 3 p random %} </p>
+
+{% endblock content %}

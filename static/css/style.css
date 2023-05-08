@@ -1,0 +1,11 @@
+.rounded {
+    border-radius: 10px;
+  }
+  
+  .bg-light {
+    background-color: #0080ff;
+  }
+  
+  .p-4 {
+    padding: 40px;
+  }
