@@ -19,6 +19,7 @@ from customer import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-        path('', include('customer.urls'))
+        path('', include('customer.urls')),
+        path('accounts/', include('accounts.urls'))
 
 ]

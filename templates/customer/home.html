@@ -1,17 +1,153 @@
 {% extends 'customer/base.html' %}
 {% load static %}
-{% block title %}
-Home
-{% endblock title %}
+{% block title %} Home {% endblock title %}
+{% block metades %} 
+    <meta name="description" content="Food hut is leading food delivery app">
+{% endblock metades %}
+{% block style %} 
+<link rel="stylesheet" href="{% static 'css/homenav.css' %}">
+{% endblock style %}
+{% block content %} 
+<div class="main container">
+    <!-- Main content -->
 
-{% block stylesheet %}
-<link rel="stylesheet" href="{% static 'css/style.html' %}">
+      <div class="row grid-content">  
+        <div class="col content-column1">
+          <img src="" alt="" class="content-image1">
+          <h2 class="content-heading1">Be the Fastest <br> In Delivering <br>Your <b>Food</b></h2>
+          <p>Hey, our delicious food is waiting for you,
+            we are always near to you with fresh item of food.
+          </p>
+          <button>Order Now</button>
+          <!-- <p> <button class="content-button">Download Now</button> </p> -->
+        </div>
 
-{% endblock stylesheet %}  
+        <div class="col content-column2">
+          <img src="{% static 'images/mandhi.png' %}" alt="" class="content-image2">
+          
+          <p> </p>
+        </div>
+        </div>
+  <!--Categories -->
+  <div class="categories">
+  <div class="category-nav">
+    <h1 class="category-head"> Resturants</h1>
+    <input class="search-form" type="text" placeholder="Search by name" aria-label="default input example">
+  </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> <a href="./menu.html">Malabar Resturant</a></h5>
+
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisi eu bibendum lobortis, velit ante eleifend est, eu suscipit augue velit quis dui.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Highway Kitchen</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisi eu bibendum lobortis, velit ante eleifend est, eu suscipit augue velit quis dui.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hotel Aryas</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisi eu bibendum lobortis, velit ante eleifend est, eu suscipit augue velit quis dui.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hotel Aryas</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisi eu bibendum lobortis, velit ante eleifend est, eu suscipit augue velit quis dui.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hotel Aryas</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisi eu bibendum lobortis, velit ante eleifend est, eu suscipit augue velit quis dui.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hotel Aryas</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisi eu bibendum lobortis, velit ante eleifend est, eu suscipit augue velit quis dui.</p>
+          </div>
+        </div>
+      </div>
 
 
-{% block content %}
-       
-<p> {% lorem 3 p random %} </p>
 
+    </div>
+  </div>
+
+
+  <!-- Grid -->
+  <div class=" grid-offers ">
+    <div class="row offers-row">
+      <h3 class="offers-heading1">WHAT WE SERVE</h2>
+      <h1 class="offers-heading2">Your Favorite Food Delivery Partner</h1>
+
+      <div class="col-md-4 offers-column1">
+        <img src="images/easytoorder.png" alt="" class="gridimage">
+        <h2>Easy to Order</h2>
+        <p>You only need few steps in ordering food Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse provident aut ea harum, ex veniam. Illum vero unde corrupti voluptates odit consequatur eius nihil dolorem, modi dicta. Illum, quos dolor!</p>
+      </div>
+      <div class="col-md-4 offers-column2">
+        <img src="images/fastdeliveryapp.png" alt="" class="gridimage">
+        <h2>Fast Delivery</h2>
+        <p>Delivery is always ontime even faster Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero repellat obcaecati quidem, corrupti sint dignissimos eaque consequatur aliquam facere laboriosam temporibus dolorem facilis quisquam dicta autem eligendi iure quaerat.</p>
+      </div>
+      <div class="col-md-4 offers-column3">
+        <img src="images/bestquality.png" alt="" class="gridimage">
+        <h2>Best Quality </h2>
+        <p>Not only fast from us quality is also number one Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus possimus atque adipisci tenetur sint exercitationem minus non beatae, corporis saepe unde rem impedit aliquid necessitatibus ea repellat autem? Blanditiis, architecto!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="row footer-row">
+        <div class="col footer-col1">
+          <h3 class="footer-heading1">FOOD <b>HUT</b></h2>
+          <p class="footer-para"></p>
+            Our job is to fill you with delicious food Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam omnis consequuntur sit, ad enim quas maiores. Ut doloremque, sunt ipsum incidunt, voluptatum dolore ipsam placeat
+        </div>
+        <div class="col footer-col2">
+          <ul class="footer-list2">
+            <li><h3>About</h3></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+      
+        </div>
+        <div class="col footer-col3">
+          <ul class="footer-list3">
+            <li><h3>Company</h3></li>
+            <li><a href="#">Why us?</a></li>
+            <li><a href="#">Partner with us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    
+</div>
 {% endblock content %}
