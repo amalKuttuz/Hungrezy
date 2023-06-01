@@ -13,8 +13,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/login.css' %}">
-
-
    
     </head>
 
@@ -24,24 +22,27 @@
         <div class="main ">
              <!-- Navigation bar -->
             <nav class="login-nav">
-                <a class="navbar-brand" href="./home.html">Food <b>Hut</b></a>
+                <a class="navbar-brand" href="{% url 'home' %}">Food <b>Hut</b></a>
             </nav>
-          
+            
             <div class="login-box">
                 <h2>Sign in</h2>
-                <form>
-                  <label for="email">Email address</label>
-                  <br>
-                  <input type="email" class="emailbox form-control"> 
-                  <br>
-                  <label for="password">Password</label>
-                  <br>
-                  <input type="password" class="pass form-control"> 
-                  
+                <form method="post" action=".">
+                    {% csrf_token %}
+                
+                    {{ form.as_p }}
+                
                   <p class="forgot"> <a  href="#">Forgot password?</a> </p>
                   <button type="signin" class="form-control">Sign in</button>
                 </form>
-                <p class="join">New to here?<a href="#"> Join now</a></p>
+                <p class="join">New to here?<a href="{% url 'signup' %}"> Join now</a></p>
+                    {% if messages %}  
+                    <ul>   
+                        {% for message in messages %}  
+                            <li>{{ message }}</li>  
+                            {% endfor %}  
+                    </ul>   
+                    {% endif %}  
             </div>
                     <!-- Footer -->
             <footer>

@@ -5,7 +5,7 @@
     <meta name="description" content="Food hut is leading food delivery app">
 {% endblock metades %}
 {% block style %} 
-<link rel="stylesheet" href="{% static 'css/homenav.css' %}">
+{% comment %} <link rel="stylesheet" href="{% static 'css/homenav.css' %}"> {% endcomment %}
 {% endblock style %}
 {% block content %} 
 <div class="main container">
@@ -37,7 +37,9 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+          <div class="card-image"> 
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="..."> 
+          </div>
           <div class="card-body">
             <h5 class="card-title"> <a href="./menu.html">Malabar Resturant</a></h5>
 
@@ -104,50 +106,24 @@
       <h1 class="offers-heading2">Your Favorite Food Delivery Partner</h1>
 
       <div class="col-md-4 offers-column1">
-        <img src="images/easytoorder.png" alt="" class="gridimage">
+        <img src="{% static 'images/easytoorder.png' %}" alt="" class="gridimage">
         <h2>Easy to Order</h2>
         <p>You only need few steps in ordering food Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse provident aut ea harum, ex veniam. Illum vero unde corrupti voluptates odit consequatur eius nihil dolorem, modi dicta. Illum, quos dolor!</p>
       </div>
       <div class="col-md-4 offers-column2">
-        <img src="images/fastdeliveryapp.png" alt="" class="gridimage">
+        <img src="{% static 'images/fastdeliveryapp.png' %}" alt="" class="gridimage">
         <h2>Fast Delivery</h2>
         <p>Delivery is always ontime even faster Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero repellat obcaecati quidem, corrupti sint dignissimos eaque consequatur aliquam facere laboriosam temporibus dolorem facilis quisquam dicta autem eligendi iure quaerat.</p>
       </div>
       <div class="col-md-4 offers-column3">
-        <img src="images/bestquality.png" alt="" class="gridimage">
+        <img src="{% static 'images/bestquality.png' %}" alt="" class="gridimage">
         <h2>Best Quality </h2>
         <p>Not only fast from us quality is also number one Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus possimus atque adipisci tenetur sint exercitationem minus non beatae, corporis saepe unde rem impedit aliquid necessitatibus ea repellat autem? Blanditiis, architecto!</p>
       </div>
     </div>
   </div>
 
-   <!-- Footer -->
-   <footer class="footer">
-      <div class="row footer-row">
-        <div class="col footer-col1">
-          <h3 class="footer-heading1">FOOD <b>HUT</b></h2>
-          <p class="footer-para"></p>
-            Our job is to fill you with delicious food Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam omnis consequuntur sit, ad enim quas maiores. Ut doloremque, sunt ipsum incidunt, voluptatum dolore ipsam placeat
-        </div>
-        <div class="col footer-col2">
-          <ul class="footer-list2">
-            <li><h3>About</h3></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Blogs</a></li>
-          </ul>
-      
-        </div>
-        <div class="col footer-col3">
-          <ul class="footer-list3">
-            <li><h3>Company</h3></li>
-            <li><a href="#">Why us?</a></li>
-            <li><a href="#">Partner with us</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+   
     
 </div>
 {% endblock content %}
